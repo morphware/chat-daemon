@@ -84,6 +84,13 @@ To set up Ngrok for secure tunneling, follow these steps:
 
 Once the installation is complete, you can start the services and access the Open WebUI interface via the Ngrok URL provided.
 
+### Download a Model
+
+To download and start using a model, enter the model name into the form-field highlight in red, below. Then, press enter or click the download button to the right of the form-field.
+
+![image](https://github.com/morphware/chat-daemon/assets/8116437/df6052c8-abab-4c08-b663-e36b120a421d)
+
+
 ## Contributing
 
 Contributions are welcome! Please fork this repository, create a new branch, and submit a pull request for review.
