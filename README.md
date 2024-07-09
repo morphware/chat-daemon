@@ -86,6 +86,8 @@ Once the installation is complete, you can start the services and access the Ope
 
 ### Download a Model
 
+_Note: The following is only for users with GPU-enabled nodes who want to download LLMs. These users have administrative privileges on their nodes, which you can see in the image below ("Admin Panel")._
+
 To download and start using a model, enter the model name into the form-field highlight in red, below. Then, press enter or click the download button to the right of the form-field.
 
 ![image](https://github.com/morphware/chat-daemon/assets/8116437/df6052c8-abab-4c08-b663-e36b120a421d)
