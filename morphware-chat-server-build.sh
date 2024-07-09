@@ -42,7 +42,7 @@ sudo apt-get install -y nvidia-docker2
 sudo systemctl restart docker
 #
 ## 6. Restart
-reboot
+sudo reboot
 
 
 # Installing Open WebUI with Bundled Ollama Support
