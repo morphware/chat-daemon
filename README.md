@@ -2,6 +2,10 @@
 
 This repository contains the necessary scripts and instructions to set up the Morphware Chat Daemon, which includes installing the NVIDIA Container Toolkit, setting up Open WebUI with bundled Ollama support, and configuring Ngrok for secure tunneling.
 
+The project plans to sponsor Open WebUI, soon, and will eventually maintain a forked version of it in a separate repository. This repository should be the one that pulls everything together. The entire stack is as follows:
+
+![image](https://github.com/morphware/chat-daemon/assets/8116437/bd8275ab-5dbe-429e-9e5f-4194fb1b950b)
+
 ## Table of Contents
 - [Installation](#installation)
   - [NVIDIA Container Toolkit](#nvidia-container-toolkit)
