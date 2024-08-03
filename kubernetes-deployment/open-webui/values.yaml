@@ -1,0 +1,49 @@
+ollama:
+#   # mountPath: "/mnt/ollama"
+#   gpu:
+#     # -- Enable GPU integration
+     enabled: false
+    
+#     # -- GPU type: 'nvidia' or 'amd'
+#     type: 'nvidia'
+    
+#     # -- Specify the number of GPU to 1
+#     number: 1
+   
+  # -- List of models to pull at container startup
+  # models: 
+  #   - mistral
+  #   - llama3.1:8b
+
+# persistentVolume:
+#   enabled: true
+#   accessModes: ["ReadWriteMany"]
+#   size: 1000Gi
+#   storageClass: "nfs-provisioner"
+#   volumeMode: Filesystem
+#   ReclaimPolicy: Retain
+
+pipelines:
+  enabled: true
+
+persistence:
+  enabled: true
+#  accessModes: ["ReadWriteMany"]
+#   size: 1000Gi
+#   storageClass: "nfs-csi"
+#   volumeMode: Filesystem
+  existingClaim: open-webui-claim
+
+
+# volumeMounts:
+#   - name: ollama-pvc
+#     mountPath: "/mnt"
+# volumes:
+#   - name: open-webui-claim
+#     persistentVolumeClaim:
+#       claimName: open-webui-claim
+extraEnvVars: 
+  - name: OLLAMA_BASE_URL
+    value: "http://solutionsai.co.uk:11434"
+
+replicaCount: 1

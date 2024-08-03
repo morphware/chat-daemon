@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: ollama-fast-claim
+spec:
+  volumeMode: Filesystem
+  accessModes:
+    - ReadWriteMany
+  storageClassName: "nfs-csi"
+  resources:
+    requests:
+      storage: 400Gi
+  volumeName: ollama-fast-volume

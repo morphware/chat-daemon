@@ -1,0 +1,26 @@
+# kind: PersistentVolumeClaim
+# apiVersion: v1
+# metadata:
+#   name: test-claim
+# spec:
+#   storageClassName: nfs-provisioner
+#   volumeMode: Filesystem
+#   accessModes:
+#     - ReadWriteMany
+#   resources:
+#     requests:
+#       storage: 1Gi
+
+
+kind: PersistentVolumeClaim
+apiVersion: v1
+metadata:
+  name: ollama-pvc-nfs-static
+spec:
+  accessModes:
+    - ReadWriteMany
+  resources:
+    requests:
+      storage: 10Gi
+  volumeName: ollama-pv-nfs
+  storageClassName: nfs-csi
